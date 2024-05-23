@@ -4,7 +4,7 @@
 
 resource "aws_launch_template" "ecs_launch_template" {
   name = "besfort-web-server"
-  image_id      = "ami-0bb84b8ffd87024d8"  #AMI ID e Linuxit
+  image_id      = "ami-0bb84b8ffd87024d8"
   instance_type = "t2.micro"
   network_interfaces {
     associate_public_ip_address = false
